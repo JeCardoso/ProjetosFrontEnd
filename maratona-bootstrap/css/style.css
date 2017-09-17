@@ -1,0 +1,153 @@
+/* 	em = tamanho relativo do font size do elemento pai 
+	rem = tamanho relativo do font size do html (16px) */
+
+/* safe-area */
+.safe-area{
+	/* vh ou vr - altura da tela e largura em % */
+	height: 100vh;
+	background-color: #fcdb00;
+	padding-top: 1rem;
+}
+
+/* Header */
+.header{
+	height: 60px;
+}
+.nav-link{
+	color: #000;
+	font-weight: bold;
+}
+.nav-link:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* Carousel */
+.wrapper-carousel{
+	margin-top: 4rem;
+	padding-right: 7rem;
+}
+.carousel-inner{
+	margin-top: 3rem;
+	height: 535px;
+}
+.carousel .text{
+	color: #555555;
+}
+
+/* Global Texts */
+.headline{
+	font-size: 2rem; 
+}
+.description{
+	font-size: 1.3rem;
+}
+.text {
+	font-size: .85rem;
+	color: #898989;
+}
+
+/* Feature */
+.feature{
+	padding: 5rem 0;
+}
+.feature .row{
+	padding-top: 5rem;
+}
+.feature .feature-item{
+	padding:0 2rem;
+}
+.feature .feature-item .fa{
+	position: absolute;
+	left: 0;
+}
+.feature .feature-item .feature-heading{
+	margin-left: 2rem;
+}
+.feature .feature-item .feature-heading .headline {
+	font-size: 1.5rem;
+}
+
+/* footer */
+.footer{
+	padding: 5rem 0;
+	background-color: #000;
+}
+.footer .headline{
+	color: #fcdb00;
+}
+.footer .description{
+	color: #898989;
+}
+.footer form{
+	margin: 4rem 0;
+}
+.footer .btn-warning{
+	background-color: #fcdb00;
+	color: #000;
+	font-weight: bold;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.footer .btn-warning:hover{
+	cursor: pointer;
+}
+.footer .nav{
+	margin-top: 5rem;
+}
+.footer .nav-link{
+	color: #fff;
+	padding: 0;
+	font-weight: normal;
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+	.navbar-collapse{
+		position: relative;
+		z-index: 999;
+		background-color: #fcdb00;
+	}
+	.navbar-nav{
+		padding: .5rem;
+		margin-top: 2rem;
+	}
+}
+@media (max-width: 480px){
+	.img-item{
+		display: none !important;
+	}
+	.wrapper-carousel{
+		margin-top: 2rem;
+	}
+	.carousel-inner{
+		height: 80vh;
+		margin-top: 0;
+	}
+	.headline{
+		font-size: 1.7rem;
+	}
+	.description{
+		font-size: 1rem;
+	}
+	.text{
+		font-size: .75rem;
+	}
+	.feature .feature-item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.feature .feature-item .fa{
+		position: initial;
+		margin-bottom: 1rem;
+	}
+	.feature .feature-item .feature-heading{
+		margin-left: 0;
+	}
+	.feature .feature-item .feature-heading .headline, 
+	.feature .feature-item .feature-heading .text{
+		text-align: center;
+	}
+}
